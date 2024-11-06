@@ -1,0 +1,133 @@
+.main {
+
+ 
+    height: 300px;
+}
+.productContainer {
+
+    width: 35%;
+    margin-top: 8%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+.image {
+
+    width: 80%;
+    border-top-left-radius: 25px;
+}
+.image img {
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.mobileImage {
+
+    display: none;
+}
+.text {
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    width: 80%;
+    height: 300px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.headline {
+
+    color: rgb(141, 139, 139);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+}
+
+.description {
+
+    color: rgb(141, 139, 139);
+}
+.price {
+
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemPrice {
+
+   font-size: 18px;
+   font-weight: 700;
+   color: green;
+}
+.discount {
+
+    font-size: 8px;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-left: 6px;
+    text-decoration: line-through;
+    color: rgb(141, 139, 139);
+}
+.button {
+
+    background-color: rgb(8, 94, 8);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    margin-top: 12%;
+}
+.button:hover {
+    
+    background-color: rgb(4, 27, 4);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .productContainer {
+      flex-direction: column;
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .text {
+     width: 100%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .desktopImage {
+   display: none;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .mobileImage {
+     width: 124%;
+     display: block;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .image img {
+    
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .text {
+    
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius:  8px;
+    }
+  }
