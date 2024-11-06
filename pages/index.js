@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Products from "./components/products";
 
-
+// Homepage
 export default function Home() {
   return (
     <>
